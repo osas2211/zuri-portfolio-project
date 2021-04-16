@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+:root{
+    --theme-color:#041a3a;
+    --sec-color:#F7EC59;
+    --light-theme-color:#71d1f7da;
+    --main-font: "Poppins",Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FFFBFC;
+    margin: 0;
+    position: relative;
+    
+}
+
+
+
+#main-header{
+    position: sticky;
+    z-index: 5;
+    background-color: #FFFBFC;
+    width: 100%;
+    padding: 1rem 0rem;
+    margin-bottom: 1
+    0px;
+    right: 0px;
+    top: 0px;
+    box-shadow: 2px 0px 25px #aaaaaa;
+}
+
+#main-header ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#main-header ul li{
+    padding: 1rem;
+}
+
+#main-header a{
+    text-decoration: none;
+    color: var(--theme-color);
+    font-family: var(--main-font);
+    font-size: 1.08rem;
+    padding: 1rem;
+    transition: 500ms ease-in-out;
+}
+
+#main-header a:hover{
+    background-color: var(--sec-color);
+    color: #FFFBFC;
+}
+
+.home-page{
+    padding-left: 4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #2E2C2F;
+}
+
+.home-head{
+    padding-top: 2.5rem;
+    height: 25vh;
+    -line-height: 2.5rem;
+    transition: 1.5s ease-in-out;
+}
+.home-head h2{
+    font-weight: 200;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+
+.home-head h2 span{
+    font-weight: 500;
+}
+
+.home-head h3{
+    font-weight: 500;
+}
+
+.styled-boxes{
+    display: flex;
+    height: 75vh;
+    position: relative;
+}
+.box1{
+    display: flex;
+    flex-basis: 10%;
+    flex-direction: column-reverse;
+}
+
+a.arrow-down, a.arrow-up{
+    display: block;
+    font-size: 2rem;
+    padding: 1.2rem;
+    border: 1px solid;
+    margin-right: 50px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: 500ms ease-in-out;
+    text-decoration: none;
+    color: #2E2C2F;
+}
+
+
+a.arrow-down:hover, a.arrow-up:hover{
+    background-color: var(--sec-color);
+    border: var(--sec-color);
+    margin-bottom: 50px;
+    
+}
+.box2{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 90%;
+    background-color: var(--theme-color);
+    color: #FFFBFC;
+    transition: 2s ease-in-out;
+}
+
+.box2 .box2-text{
+    padding: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.box2 .small-right-box{
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+    bottom: 0%;
+    background-color: var(--sec-color);
+    height: 50%;
+    width: 5%;
+}
+
+.about-me-page {
+    display: flex;
+    font-family: "Ubuntu",Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    height: 100vh;
+}
+
+.about-me-page .photo-area{
+    background-color: var(--theme-color);
+    flex-basis: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.about-me-page .photo-area a.arrow-up{
+    display: none;
+}
+
+.photo img{
+    width: 100%;
+    height: 21rem;
+}
+
+.about-me-page .text-area{
+    padding: 5rem;
+    flex-basis: 75vw;
+    position: relative;
+}
+
+.about-me-page .text-area h2{
+    text-transform: uppercase;
+    padding: 2rem 0;
+    word-spacing: 8px;
+    letter-spacing: 10px;
+    font-size: 2rem;
+    color: var(--theme-color);
+}
+
+.about-me-page .text-area p{
+    padding: 0.4rem 0;
+}
+
+.about-me-page .text-area ul{
+    padding: 1rem 2rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about-me-page .text-area li{
+    padding: 0.5rem 0;
+}
+
+.about-me-page .text-area li::before{
+    content: "▹";
+    position: relative;
+    line-height: 15px;
+    color: #56CBF9;
+    font-size: 1.2rem;
+}
+
+.about-me-page .text-area .social-icons{
+    
+    padding: 0 1rem;
+}
+
+.about-me-page .text-area .social-icons a{
+    color: var(--theme-color);
+    padding: 0.5rem;
+    transition: 500ms ease-in-out;
+}
+
+.about-me-page .text-area .social-icons a:hover{
+    color: #3b8dad;
+    
+}
+
+.social-icons i{
+    font-size: 1.6rem;
+    transition: 500ms ease-in-out;
+}
+.social-icons i:hover{
+    transform: rotate(360deg);
+}
+
+.about-me-page .text-area a.arrow-down{
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+}
+
+.about-me-page .text-area a.arrow-up{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.about-me-page .text-area p.down{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cv{
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    word-spacing: 5px;
+}
+
+.cv a{
+    color: var(--theme-color);
+    display: block;
+    width: 7rem;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--light-theme-color);
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+    text-align: center;
+    
+}
+
+.cv a:hover{
+    background-color: var(--sec-color);
+    border-color: var(--sec-color);
+    padding: 12px;
+}
+
+.projects-section{
+    height: 100vh;
+    background-color: var(--theme-color);
+    margin: 0;
+}
+
+
+@media screen and (max-width:1200px){
+    .about-me-page{
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:640px){
+    .about-me-page{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-me-page .photo-area{
+        flex-basis: 20vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .photo img{
+        width: 50%;
+        height: 15rem;
+    }
+    
+    .about-me-page .text-area{
+        padding: 2rem;
+        flex-basis: 150vh;
+    }
+
+    .about-me-page .text-area a.arrow-down{
+        right: 10px;
+        bottom: 0px;
+    }
+    
+    .about-me-page .text-area a.arrow-up{
+        display: none;
+    }
+    
+    .about-me-page .text-area p.down{
+        right: 10px;
+        bottom: 0px;
+    }
+    .about-me-page .photo-area a.arrow-up{
+        position: absolute;
+        display: inline;
+        right: 0px;
+        top: 20px;
+        color: #FFFBFC;
+        border-color: #FFFBFC;
+    }
+    
+}
