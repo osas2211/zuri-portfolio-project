@@ -469,6 +469,7 @@ footer{
     font-family: var(--main-font);
     text-align: center;
     text-transform: uppercase;
+    color: #ccd6f6;
 }
 
 footer a{
@@ -507,6 +508,13 @@ footer a{
     .about-me-page .text-area{
         padding: 2rem;
         flex-basis: 120vh;
+    }
+    #main-header ul li{
+        padding: 0.5rem;
+    }
+
+    #main-header ul li a{
+        padding: 0.5rem;
     }
 
     /*
