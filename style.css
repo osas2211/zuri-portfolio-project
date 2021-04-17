@@ -26,7 +26,6 @@ body{
     z-index: 5;
     background-color: #FFFBFC;
     width: 100%;
-    height: 10vh;
     margin-bottom: 10px;
     right: 0px;
     top: 0px;
@@ -59,11 +58,17 @@ body{
     color: #FFFBFC;
 }
 
+/*
+    ==========================================
+                HOME SECTION
+    ==========================================
+*/
+
 .home-page{
     padding-left: 4rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    font-family: var(--main-font);
     color: #2E2C2F;
 }
 
@@ -146,18 +151,24 @@ a.arrow-down:hover, a.arrow-up:hover{
     width: 5%;
 }
 
+/*
+    ==========================================
+                ABOUT SECTION
+    ==========================================
+*/
+
 .about-me-page {
     display: flex;
     font-family: "Ubuntu",Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
-    height: 105vh;
+    height: 110vh;
 }
 
 .about-me-page .photo-area{
     background-color: var(--theme-color);
     flex-basis: 25vw;
-    height: 105vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,6 +298,186 @@ a.arrow-down:hover, a.arrow-up:hover{
 }
 
 
+
+
+/*
+    ==========================================
+                PORTFOLIO SECTION
+    ==========================================
+*/
+
+.projects-section{
+    height: auto;
+    padding-bottom: 5rem;
+    background-color: var(--theme-color);
+    margin: 0;
+    font-family: "Ubuntu",Arial, Helvetica, sans-serif;
+}
+
+.projects-section h2, .contact-me h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5.5rem 0rem 1.5rem 0;
+    color: #ccd6f6;
+    font-family: var(--main-font);
+}
+
+.projects-section .instruction{
+    text-align: center;
+    margin-bottom: 1rem;
+    opacity: 0.4;
+    color: aquamarine;
+}
+
+.active-border{
+    border-bottom: 1px solid #46CBAB;
+    transition: 1.5s ease-out;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 500ms ease-out;
+
+}
+.projects .pro{
+    box-shadow: 0 12px 12px rgb(0,0,0, 0.6);
+    position: relative;
+    width: 20rem;
+    height: 23rem;
+    margin: 1rem;
+    
+}
+
+.projects .pro .imgBox{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.projects .pro .imgBox img{
+    width: 100%;
+    height: 100%;
+    transition: 800ms ease-out;
+}
+.projects .pro .imgBox img:hover{
+    transform: scale(1.2);
+}
+
+.projects .pro .details {
+    position: absolute;
+    border: 1px solid #46CBAB;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2c2c2cef;
+    opacity: 1;
+    transform: scaleY(0);
+    transition: 800ms;
+    padding: 30px;
+    color: #FFFBFC;
+}
+
+.projects .pro:hover .details{
+    transform: scaleY(1);
+}
+
+.details h3{
+    color: #46CBAB;
+    border-bottom: 1px solid #ffffff;
+    padding: 4px;
+    margin-bottom: 1rem;
+}
+
+.dev-stack{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #46CBAB;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.15rem;
+    font-size: 1rem;
+    font-weight: 400;
+    transform: scaleY(1);
+}
+.details a{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 0.6rem;
+}
+
+.details a:hover{
+    color: #46CBAB;
+}
+
+
+/*
+    ==========================================
+                CONTACT SECTION
+    ==========================================
+*/
+
+.contact-me{
+    background-color: var(--theme-color);
+    padding: 2rem;
+}
+.contact-me .wrapper{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-me p{
+    text-align: center;
+    color: #ccd6f6;
+    opacity: 0.6;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    word-spacing: 3px;
+}
+
+.contact-me a{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid ;
+    border-color: #46CBAB;
+    color: #ccd6f6;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+.contact-me a:hover{
+    background-color: rgba(100,255,218,0.1);
+}
+
+footer{
+    background-color: #46CBAB;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer a{
+    color: #F7EC59;
+    font-size: 1.5rem;
+}
+
+
+
 @media screen and (max-width:1200px){
     .about-me-page{
         height: auto;
@@ -340,8 +531,7 @@ a.arrow-down:hover, a.arrow-up:hover{
         color: #FFFBFC;
         border-color: #FFFBFC;
     }
-    
+    */
+
+
 }
-
-*/
-
