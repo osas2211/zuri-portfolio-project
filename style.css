@@ -26,9 +26,8 @@ body{
     z-index: 5;
     background-color: #FFFBFC;
     width: 100%;
-    padding: 1rem 0rem;
-    margin-bottom: 1
-    0px;
+    height: 10vh;
+    margin-bottom: 10px;
     right: 0px;
     top: 0px;
     box-shadow: 2px 0px 25px #aaaaaa;
@@ -69,14 +68,15 @@ body{
 }
 
 .home-head{
-    padding-top: 2.5rem;
-    height: 25vh;
+    padding-top: 5rem;
+    margin-bottom: 4rem;
+    height: 20vh;
     -line-height: 2.5rem;
     transition: 1.5s ease-in-out;
 }
 .home-head h2{
     font-weight: 200;
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 5px;
 }
 
@@ -85,12 +85,13 @@ body{
 }
 
 .home-head h3{
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .styled-boxes{
     display: flex;
-    height: 75vh;
+    height: 70vh;
     position: relative;
 }
 .box1{
@@ -150,13 +151,13 @@ a.arrow-down:hover, a.arrow-up:hover{
     font-family: "Ubuntu",Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
-    height: 100vh;
+    height: 105vh;
 }
 
 .about-me-page .photo-area{
     background-color: var(--theme-color);
     flex-basis: 25vw;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -304,6 +305,7 @@ a.arrow-down:hover, a.arrow-up:hover{
         height: 100vh;
         display: flex;
         flex-direction: column;
+        padding-top: 3.7rem;
     }
     
     .photo img{
@@ -313,9 +315,10 @@ a.arrow-down:hover, a.arrow-up:hover{
     
     .about-me-page .text-area{
         padding: 2rem;
-        flex-basis: 150vh;
+        flex-basis: 120vh;
     }
 
+    /*
     .about-me-page .text-area a.arrow-down{
         right: 10px;
         bottom: 0px;
@@ -339,3 +342,6 @@ a.arrow-down:hover, a.arrow-up:hover{
     }
     
 }
+
+*/
+
